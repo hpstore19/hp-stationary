@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HP Stationary</title>
   <style>
     body {
-      font-family: lemonmilk, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
     header {
-      background-color: #2c3e50;
+      background-color: #c62828; /* Red */
       color: white;
       padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #34495e;
+      background-color: #ffffff;
+      border-bottom: 2px solid #c62828;
       padding: 10px;
       text-align: center;
     }
     nav a {
-      color: white;
+      color: #c62828;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
-      padding: 20px;
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #c62828;
+      margin-bottom: 15px;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
     }
     .card {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+      padding: 20px;
       text-align: center;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+    .card h3 {
+      margin: 0;
+      color: #c62828;
     }
     footer {
-      background-color: #2c3e50;
+      background-color: #c62828;
       color: white;
       text-align: center;
-      padding: 10px;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #c62828;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
     }
   </style>
 </head>
@@ -65,19 +90,19 @@
 </nav>
 
 <section id="home">
-  <h2>Welcome to HP Stationary</h2>
-  <p>Your one-stop shop for all study and office stationery items.</p>
+  <h2>Welcome</h2>
+  <p>Welcome to <strong>HP Stationary</strong>. We provide quality stationery items for students, schools, colleges, and offices.</p>
 </section>
 
 <section id="products">
   <h2>Our Products</h2>
   <div class="products">
-    <div class="card">Pen</div>
-    <div class="card">Pencil</div>
-    <div class="card">Notebook / Copy</div>
-    <div class="card">Eraser</div>
-    <div class="card">Sharpener</div>
-    <div class="card">Files & Folders</div>
+    <div class="card"><h3>Pen</h3></div>
+    <div class="card"><h3>Pencil</h3></div>
+    <div class="card"><h3>Notebook / Copy</h3></div>
+    <div class="card"><h3>Eraser</h3></div>
+    <div class="card"><h3>Sharpener</h3></div>
+    <div class="card"><h3>Files & Folders</h3></div>
   </div>
 </section>
 
@@ -87,14 +112,16 @@
     <li>All Stationary Items</li>
     <li>School & College Supplies</li>
     <li>Office Stationary</li>
+    <li>Bulk Orders Available</li>
   </ul>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Shop Name: HP Stationary</p>
-  <p>Phone: __________</p>
-  <p>Address: __________</p>
+  <p><strong>Shop Name:</strong> HP Stationary</p>
+  <p><strong>Phone:</strong> 75087-14009</p>
+  <p><strong>Address:</strong> Opp. Baba Khadak Singh School Sun Sahib Road Chheharta ASR-143105</p>
+  <a class="btn" href="#">Call Now</a>
 </section>
 
 <footer>
@@ -103,4 +130,3 @@
 
 </body>
 </html>
-
